@@ -451,14 +451,10 @@ text-decoration: none;
 }
 
 .promo-carousel{
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; */
-  padding: 5rem;
-  background-color: black;
   color: aliceblue;
   height: 400px;
   width: 94%;
+  margin: auto;
 }
 
 /* .box{
@@ -475,9 +471,12 @@ text-decoration: none;
  
 }
 .promo-img{
-  height: 350px;
-  width: 800px;
+  height: 200px;
+  width: 400px;
+  
+  
 }
+
 .bg-logo {
   display: flex;
   justify-content: center;
@@ -535,4 +534,63 @@ text-decoration: none;
   font-size: 30px;
   width: 600px;
   margin: 50px;
+}
+
+/* ABOUT */
+
+.about-container {
+  background-image: url(./assests/about-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+}
+.about-recontainer {
+  background-color: rgba(17, 17, 17, 0.466);
+  height: 100%;
+  width: 50%;
+  margin: auto;
+}
+.about-logo {
+  background-image: url(./assests/logo-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 160px;
+  width: 100%;
+  display: flex;
+  margin-left: 250px;
+}
+.about-text {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color: rgb(197, 196, 196);
+}
+.about-sub {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  margin: 30px;
+}
+.icon-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.icon-fa {
+  height: 25px;
+  color: #3b5998;
+}
+.icon-yt {
+  height: 25px;
+  color: #DB4437
+}
+.icon-google {
+  height: 25px;
+  color: #4285F4;
+}
+.icon-contact {
+  height: 25px;
+  color: burlywood;
 }
