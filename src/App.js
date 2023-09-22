@@ -11,6 +11,7 @@ import About from "./components/about";
 import Promo from "./components/promo";
 import React from "react";
 import ProvinceList from "./ProvinceList";
+import Database from "./database";
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <About/>
 
         <ProvinceList />
+        <Database/>
       
 
 
