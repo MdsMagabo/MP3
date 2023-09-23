@@ -1,9 +1,6 @@
 import React from "react";
 const Brands = () => {
-
-
     return (
-        <>
             <section className="carSlider">
                 <div className="brand-container">
                     <div className="brand-subcontainer">
@@ -66,8 +63,6 @@ const Brands = () => {
                     </div>
                 </div>
             </section>
-        
-        </>
     )
 }
 export default Brands;

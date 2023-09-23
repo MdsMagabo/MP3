@@ -5,15 +5,16 @@ const Tire = () => {
             <div className="tire-container">
                 <div className="filter_buttons">
                 <button className="active" data-name="all">Show all</button>
-                <button data-name="phone">SUV</button>
-                <button data-name="clothes">Sedan</button>
-                <button data-name="clothes">Hatchback</button>
+                <button className="SUV-btn">SUV</button>
+                <button className="sedan-btn">Sedan</button>
+                <button className="hatch-btn">Hatchback</button>
                 </div>
             </div>
             
+            {/* SUV */}
 
             <div className="filterable_cards">
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card SUV">
                     <div className="tire-img t-img1">
                     </div>
                     <div className="tirecard_body">
@@ -23,7 +24,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card SUV">
                     <div className="tire-img t-img2">
                     </div>
                     <div className="tirecard_body">
@@ -33,7 +34,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card SUV">
                     <div className="tire-img t-img3">
                     </div>
                     <div className="tirecard_body">
@@ -43,7 +44,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card SUV">
                     <div className="tire-img t-img4">
                     </div>
                     <div className="tirecard_body">
@@ -53,7 +54,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card SUV">
                     <div className="tire-img t-img5">
                     </div>
                     <div className="tirecard_body">
@@ -63,7 +64,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card">
                     <div className="tire-img t-img6">
                     </div>
                     <div className="tirecard_body">
@@ -73,7 +74,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card">
                     <div className="tire-img t-img7">
                     </div>
                     <div className="tirecard_body">
@@ -83,7 +84,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card SUV">
                     <div className="tire-img t-img8">
                     </div>
                     <div className="tirecard_body">
@@ -93,7 +94,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card SUV">
                     <div className="tire-img t-img9">
                     </div>
                     <div className="tirecard_body">
@@ -103,7 +104,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card SUV">
                     <div className="tire-img t-img10">
                     </div>
                     <div className="tirecard_body">
@@ -113,7 +114,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card SUV">
                     <div className="tire-img t-img11">
                     </div>
                     <div className="tirecard_body">
@@ -123,8 +124,9 @@ const Tire = () => {
                     </div>
                 </div>
 
+                {/* Sedan */}
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card Sedan">
                     <div className="tire-img t-img12">
                     </div>
                     <div className="tirecard_body">
@@ -134,7 +136,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card Sedan">
                     <div className="tire-img t-img13">
                     </div>
                     <div className="tirecard_body">
@@ -144,7 +146,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card Sedan">
                     <div className="tire-img t-img14">
                     </div>
                     <div className="tirecard_body">
@@ -154,7 +156,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card Sedan">
                     <div className="tire-img t-img15">
                     </div>
                     <div className="tirecard_body">
@@ -164,7 +166,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card Sedan">
                     <div className="tire-img t-img16">
                     </div>
                     <div className="tirecard_body">
@@ -174,7 +176,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card Sedan">
                     <div className="tire-img t-img17">
                     </div>
                     <div className="tirecard_body">
@@ -184,7 +186,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card Sedan">
                     <div className="tire-img t-img18">
                     </div>
                     <div className="tirecard_body">
@@ -194,7 +196,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card Sedan">
                     <div className="tire-img t-img19">
                     </div>
                     <div className="tirecard_body">
@@ -204,7 +206,7 @@ const Tire = () => {
                     </div>
                 </div>
 
-                <div className="tire-card" data-name="phones">
+                <div className="tire-card Sedan">
                     <div className="tire-img t-img20">
                     </div>
                     <div className="tirecard_body">

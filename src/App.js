@@ -1,36 +1,25 @@
-import "../src/App.css";
+import "./App.css";
+import "./Utilities.css";
 import Brands from "./brands";
 import Navbar from "./components/nav";
 import Hero from "./components/hero";
 import Tire from "./tire";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Alltires from "./components/alltires";
 import FormCart from "./components/FormCart";
-import Brand from "./components/brand";
-
-
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
-        <Hero/>
         <BrowserRouter>
         <Navbar/>
           <Routes>
-            <Route path="/brands" element={<Brands/>}/>
+            <Route path="/" element={ <Hero/> }/>
+            <Route path="/brands" element={ <Brands/> }/>
+            <Route path="/tires" element={ <Tire/> }/>
+            <Route path="/form-cart" element={ <FormCart/> }/>
           </Routes>
         </BrowserRouter>
-        <Alltires/>
-        
-        <Tire/>
-        <FormCart/>
-        <Brand/>
-
-        
-
-
     </div>
   );
 }

@@ -1,11 +1,23 @@
 import { Link } from "react-router-dom"
 
 const Navbar = () => {
+
+    // navBar animation on scroll
+    const navOnScroll = () => {
+        const scrollTrigger = window.scrollY;
+        const nav = document.querySelector(".nav");
+
+        scrollTrigger > 0 ? nav.classList.add("navOnScroll") : nav.classList.remove("navOnScroll")
+    }
+
+    // eventListener on window to trigger navOnScroll function
+    window.addEventListener("scroll", navOnScroll);
+
     return(
         <>
         <nav className="nav">
             <div className="brand">
-                <span className="logo">Gumo Gulong</span>
+                <div className="logo"/>
             </div>
             <nav className="navbar">
                     <Link to="aboutUs" className="nav-item">About US</Link>
