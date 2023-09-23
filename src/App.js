@@ -5,7 +5,18 @@ import Navbar from "./components/nav";
 import Hero from "./components/hero";
 import Tire from "./tire";
 import FormCart from "./components/FormCart";
+<<<<<<< HEAD
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+=======
+import Brand from "./components/brand";
+import About from "./components/about";
+import Promo from "./components/promo";
+import React from "react";
+import ProvinceList from "./ProvinceList";
+
+
+
+>>>>>>> 1206a283f1148e9314c5f6da1c6d8c0ef5d3fc9c
 
 
 function App() {
@@ -20,6 +31,21 @@ function App() {
             <Route path="/form-cart" element={ <FormCart/> }/>
           </Routes>
         </BrowserRouter>
+<<<<<<< HEAD
+=======
+        <Alltires/>
+   
+        
+        <Tire/>
+
+        <Promo/>
+        <About/>
+
+        <ProvinceList />
+      
+
+
+>>>>>>> 1206a283f1148e9314c5f6da1c6d8c0ef5d3fc9c
     </div>
   );
 }
