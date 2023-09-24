@@ -13,7 +13,7 @@ const WhatWeOffer = () => {
     window.addEventListener("scroll", showSectionWWO);
 
     return (
-        <section className="what-we-offer-sect" id="section_1">
+        <section className="what-we-offer-sect" id="whatWeOffer">
             <h1>What We Offer?</h1>
             <div className="wwo-card-container">
                 <div className="wwo-section-card card-1">
@@ -29,7 +29,7 @@ const WhatWeOffer = () => {
                     <p className="wwo-sect-text">Free on-site installations are available at our local stores near you!</p>
                 </div>
             </div>
-            <h2>So? What are you waiting for? <Link reloadDocument to="/tires" className="offer-btn">Shop Now!</Link></h2>
+            <h2>So? What are you waiting for? <Link reloadDocument to="/tires" className="offer-btn">Shop Now!</   Link></h2>
         </section>
     )
 }

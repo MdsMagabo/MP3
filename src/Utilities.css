@@ -2,7 +2,7 @@
 
     /* on scroll nav */
         .navOnScroll{
-            background-color: gold;
+            background-color: blue;
         }
         .navOnScroll:hover {
             background-color: black;
@@ -19,5 +19,31 @@
 
     /* WWO on scroll */
         .showWWO {
+            opacity: 1;
+        }
+/* PROMO UTILITIES */
+        .displayPromo {
+            transform: translateX(0);
+            transform: scale(0.9);
+        }
+
+/* about section utilities */
+        .displayAbout {
+            opacity: 1;
+        }
+        .hideSlide {
+            transform: translateX(-1000px);
+        }
+        .displaySlide {
+            transform: translateX(0);
+        }
+        .inactiveBtn {
+            background-color: transparent;
+        }
+        .activeBtn {
+            background-color: white;
+        }
+/* logo sect utilities */
+        .displayLogo {
             opacity: 1;
         }

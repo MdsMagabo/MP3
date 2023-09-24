@@ -29,7 +29,8 @@ const FormCart = () => {
     <div className='cart-container'>
       <div className='app-form'>
         <div className='form-title'>
-          <a className='info-text'>Your Information</a>
+          <a href=
+          ""className='info-text'>Your Information</a>
         </div>
         <form onSubmit={handleSubmit}>
           <div className='user-details'>
@@ -109,7 +110,7 @@ const FormCart = () => {
       </div>
       <div className='app-cart'>
         <div className='cart-title'>
-          <a className='info-text'>Order Summary</a>
+          <a href="" className='info-text'>Order Summary</a>
         </div>
         
       </div>

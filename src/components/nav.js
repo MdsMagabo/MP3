@@ -20,11 +20,11 @@ const Navbar = () => {
                 <div className="logo"/>
             </div>
             <nav className="navbar">
-                    <Link to="aboutUs" className="nav-item">About US</Link>
-                    <Link to="tips&Advice" className="nav-item">Tips & Advice</Link>
-                    <Link to="promo" className="nav-item">Promo</Link>
-                    <Link to="brands" className="nav-item">Brands</Link>
-                    <Link to="installationSite" className="nav-item">Installation Site</Link>
+                    <Link to="/" className="nav-item">Home</Link>
+                    <Link to="/#whatWeOffer" className="nav-item">What we Offer</Link>
+                    <Link to="/#testimonials" className="nav-item">Testimonials</Link>
+                    <Link to="/#aboutUs" className="nav-item">About Us</Link>
+                    <Link reloadDocument to="/installationSite" className="nav-item">Installation Site</Link>
                     <Link to="carModel" className="nav-item">Car Model</Link>
             </nav>
         </nav>

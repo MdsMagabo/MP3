@@ -1,7 +1,8 @@
 import videoBg from '../assests/videoBg.mp4';
-import Brand from "./brand.js";
 import Alltires from "./alltires";
 import WhatWeOffer from './whatWeOffer';
+import Promo from "./promo";
+import LogoSect from './logoSect';
 
 const Hero = () => {
     return  (
@@ -11,7 +12,8 @@ const Hero = () => {
             </div>
             <Alltires/>
             <WhatWeOffer/>
-            <Brand/>
+            <Promo/>
+            <LogoSect/>
         </>
     )
 }

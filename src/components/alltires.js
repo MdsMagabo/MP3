@@ -15,11 +15,11 @@ function Alltires() {
 
   return (
     <div className="alltire-sect">
-      <h2 className='alltire-title'>Tires for your Car</h2>
-      <p className='alltire-subtext'>browse popular tires for your car</p>
+      <h2 className='alltire-title'>Go Beyond Miles with Gumu GumuGulong</h2>
+      <p className='alltire-subtext'>Get Yours Now!</p>
       <div className='alltires'/>
       <div className='alltire-dbtn'>
-        <Link reloadDocument to="/tires" className='alltire-Btn'>View Tire Details</Link>
+        <Link reloadDocument to="/tires" className='alltire-Btn'>Go to shop</Link>
       </div>
     </div>
   )

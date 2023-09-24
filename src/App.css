@@ -1,11 +1,23 @@
-/* Universal style */
+/* Universal style */ 
+body {
+  position: relative;
+}
+body::-webkit-scrollbar {
+  background-color: black;
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  cursor: grabbing;
+}
 
 /* Navigations style */
 
     .nav {
       position: fixed;
       top: 0;
-      z-index: 999;
+      z-index: 5000;
       width: 100%;
       height: 60px;
       background: transparent;
@@ -97,6 +109,8 @@
 
 /* HERO SECTION */
     .bg-video {
+      position: relative;
+      z-index: 1500;
       height: fit-content;
       width: 100%;
     }
@@ -118,7 +132,8 @@
     }
     .alltire-subtext {
       display: flex;
-      font-size: 18px;
+      font-size: 25px;
+      font-weight: 600;
       margin: auto;
       flex-direction: column;
       align-items: center;
@@ -134,12 +149,19 @@
       border-radius: 6px;
       cursor: pointer;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease-in-out;
     }
     .alltire-dbtn {
       display: flex;
       flex-direction: row;
       justify-content: center;
     }
+    /* hover animation */
+      .alltire-Btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px 0px black;
+        background: linear-gradient(to right, #292828d3, blue, #292828d3);
+      }
     .alltires {
       background: white;
       height: 50vh;
@@ -188,7 +210,10 @@
         padding: 30px;
         width: 250px;
         height: 280px;
-        background-color: rgb(241, 207, 19);
+        background-color: blue;
+        color: white;
+        border: 2px solid white;
+        text-shadow: 2px 3px 5px Black;
         border-radius: 20px;
         font-size: 18px;
         font-weight: 700;
@@ -203,7 +228,7 @@
 
       /* hover animations */
         .wwo-section-card:hover {
-          background: linear-gradient(45deg, rgba(128, 128, 128, 0.837), gold, rgba(128, 128, 128, 0.837));
+          background: linear-gradient(45deg, rgba(128, 128, 128, 0.837), blue, rgba(128, 128, 128, 0.837));
           transform: scale(1.1);
           box-shadow: 0 0 15px 0px black;
         }
@@ -440,7 +465,7 @@
       background-repeat: round;
     }
 
-    /* sedan */
+    /* Sedan */
 
     .t-img12 {
       background-image: url(./assests/Portrait/Sedan/ASSURANCE\ DURAPLUS\ 2\ 4PR.jpg);
@@ -537,45 +562,77 @@
     color: white;
     text-decoration: none;
     }
-
-<<<<<<< HEAD
-    .promo-carousel{
-      /* display: flex; */
-      /* justify-content: center;
-      align-items: center; */
-      padding: 5rem;
-      background-color: black;
-      color: aliceblue;
-      height: 400px;
-      width: 94%;
+/* promo section */
+    .promo-sect {
+      position: fixed;
+      bottom: 0;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 50px;
     }
-=======
-.promo-carousel{
-  color: aliceblue;
-  height: 400px;
-  width: 94%;
-  margin: auto;
-}
->>>>>>> 1206a283f1148e9314c5f6da1c6d8c0ef5d3fc9c
-
-    /* .box{
-
-      height: 550px;
-    } */
-    /* .box h3{
-      text-align: center;
-    } */
-
-
-<<<<<<< HEAD
-    .slick-slide div{
-      margin: 0 1rem;
-    
+    .parent-container-promo {
+      height: 100%;
+      overflow: hidden;
+    }
+    .promo {
+      position: fixed;
+      bottom: 100px;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-color: #716e6e66;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      transform: translateX(-5000px);
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px 0px black;
     }
     .promo-img{
-      height: 350px;
-      width: 800px;
+      transform: scale(0.8);
+      margin: 0;
+      padding: 0;
     }
+    .promo-access-trigger {
+      position: fixed;
+      bottom: 5px;
+      z-index: 999;
+      right: -30px;
+      width: 500px;
+      padding: 10px;
+      color: white;
+      text-shadow: 2px 3px 5px black;
+      background-color: blue;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 800;
+      border-radius: 55px;
+      transform: scale(0.8);
+    }
+    .promo-to-shop-portal {
+      color: white;
+      transition: all 0.3s ease;
+    }
+    /* hover */
+        .promo-to-shop-portal:hover {
+          color: gold;
+        }
+
+  /* countdownTimer component Styles */
+    .countdown-timer-comp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .countdown-timer-comp span {
+      color: white;
+      margin: 0 5px;
+      text-shadow: 2px 3px 5px black;
+    }
+
     .bg-logo {
       display: flex;
       justify-content: center;
@@ -598,41 +655,41 @@
     .logo-size {
       width: 20%;
     }
-=======
-.slick-slide div{
-  margin: 0 1rem;
- 
-}
-.promo-img{
-  height: 200px;
-  width: 400px;
-  
-  
-}
 
-.bg-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-  width: 100%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("assests/tire\ background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.logo-carousel{
-  background: blur(10px);
-  height: 350px;
-  width: 60%;
-  margin: auto;
-  padding-top: 70px;
-}
-.logo-size {
-  width: 20%;
-}
->>>>>>> 1206a283f1148e9314c5f6da1c6d8c0ef5d3fc9c
+    .slick-slide div{
+      margin: 0 1rem;
+    
+    }
+    .promo-img{
+      height: 200px;
+      width: 400px;
+    }
+/* logo sect */
+
+    .bg-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 250px;
+      width: 100%;
+      opacity: 0;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("assests/tire\ background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      transition: all 1.5s ease;
+    }
+    .logo-carousel{
+      background: blur(10px);
+      height: 350px;
+      width: 60%;
+      margin: auto;
+      padding-top: 70px;
+    }
+    .logo-size {
+      width: 20%;
+    }
 
     .logo-img{
       height: 100px;
@@ -660,7 +717,6 @@
       color: black;
     }
 
-<<<<<<< HEAD
     .dropdown{
       height: 400px;
       width: 100vw;
@@ -671,56 +727,111 @@
       width: 600px;
       margin: 50px;
     }
-=======
-.dropdown{
-  height: 400px;
-  width: 100vw;
-  /* font-size: 100px; */
-}
-.select{
-  font-size: 30px;
-  width: 600px;
-  margin: 50px;
-}
+  .dropdown{
+    height: 400px;
+    width: 100vw;
+    /* font-size: 100px; */
+  }
+  .select{
+    font-size: 30px;
+    width: 600px;
+    margin: 50px;
+  }
 
 /* ABOUT */
 
 .about-container {
+  position: relative;
+  z-index: 1500;
   background-image: url(./assests/about-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
   width: 100%;
+  opacity: 0;
+  transition: all 1.5s ease-in-out;
 }
 .about-recontainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(17, 17, 17, 0.466);
-  height: 100%;
+  height: 500px;
   width: 50%;
   margin: auto;
+  overflow: hidden;
 }
 .about-logo {
+  position: absolute;
+  top: 5px;
+  left: -160px;
   background-image: url(./assests/logo-2.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 160px;
   width: 100%;
+  transform: scale(0.7);
   display: flex;
   margin-left: 250px;
 }
 .about-text {
+  position: absolute;
+  top: 155px;
   display: flex;
   justify-content: center;
-  font-size: 50px;
+  font-size: 40px;
   color: rgb(197, 196, 196);
 }
-.about-sub {
-  display: flex;
-  justify-content: center;
+.about-sub1 {
+  position: absolute;
+  top: 200px;
   font-size: 18px;
+  text-align: justify;
   color: white;
   margin: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.about-sub2 {
+  position: absolute;
+  top: 200px;
+  transform: translateX(1000px);
+  font-size: 18px;
+  text-align: justify;
+  color: white;
+  margin: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.btn-cont {
+  position: absolute;
+  bottom: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.slideAboutBtn-1,
+.slideAboutBtn-2 {
+  text-align: center;
+  color: white;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 90%;
+  border: 2px solid white;
+  background: transparent;
+  transform: scale(0.7);
+  transition: all 0.3s ease;
+}
+.slideAboutBtn-1, 
+.slideBtn:hover {
+  color: black;
+  background-color: white;
 }
 .icon-footer {
+  position: absolute;
+  bottom: 30px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -728,19 +839,27 @@
 .icon-fa {
   height: 25px;
   color: #3b5998;
+  transition: all 0.3s ease;
 }
 .icon-yt {
   height: 25px;
-  color: #DB4437
+  color: #DB4437;
+  transition: all 0.3s ease;
 }
 .icon-google {
   height: 25px;
   color: #4285F4;
+  transition: all 0.3s ease;
 }
 .icon-contact {
   height: 25px;
   color: burlywood;
+  transition: all 0.3s ease;
 }
+  /* hovers */
+  .icon:hover {
+    transform: translateY(-8px);
+  }
 
 /* Location */
 .location-sect {
@@ -808,4 +927,27 @@
   text-align: center;
   margin: 10px;
 }
->>>>>>> 1206a283f1148e9314c5f6da1c6d8c0ef5d3fc9c
+
+/* footer section */
+
+  .footer-sect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #000;
+  }
+  .footer-text,
+  .footer-text-2 {
+    color: white;
+    margin: 0 5px;
+  }
+  .footer-text {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+  }
+  /* hover animtions */
+  .footer-text:hover {
+    color: blue;
+  }
