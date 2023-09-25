@@ -3,7 +3,7 @@ import "./Utilities.css";
 import Brands from "./brands";
 import Navbar from "./components/nav";
 import Hero from "./components/hero";
-// import Tire from "./tire";
+import Tire from "./tire";
 import FormCart from "./components/FormCart";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from "react";
@@ -20,7 +20,7 @@ function App() {
             <Route path="/" element={ <Hero/> }/>
             <Route path="/#aboutUs" element={ <About/> }/>
             <Route path="/brands" element={ <Brands/> }/>
-            {/* <Route path="/tires" element={ <Tire/> }/> */}
+            <Route path="/tires" element={ <Tire/> }/>
             <Route path="/installationSite" element={ <Slctprovince/> }/>
             <Route path="/form-cart" element={ <FormCart/> }/>
           </Routes>

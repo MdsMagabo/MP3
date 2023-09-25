@@ -3,6 +3,7 @@ import Alltires from "./alltires";
 import WhatWeOffer from './whatWeOffer';
 import Promo from "./promo";
 import LogoSect from './logoSect';
+import Testimonials from './testimonials.js';
 
 const Hero = () => {
     return  (
@@ -10,10 +11,11 @@ const Hero = () => {
             <div className="header-section">
                 <video className="bg-video" src={videoBg} autoPlay loop muted />
             </div>
-            <Alltires/>
             <WhatWeOffer/>
+            <Alltires/>
             <Promo/>
             <LogoSect/>
+            <Testimonials/>
         </>
     )
 }
