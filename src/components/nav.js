@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import ScrollspyNav from "react-scrollspy-nav";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -15,19 +16,26 @@ const Navbar = () => {
 
     return(
         <>
-        <nav className="nav">
-            <div className="brand">
-                <div className="logo"/>
-            </div>
-            <nav className="navbar">
-                    <Link to="/" className="nav-item">Home</Link>
-                    <Link to="/#whatWeOffer" className="nav-item">What we Offer</Link>
-                    <Link to="/#testimonials" className="nav-item">Testimonials</Link>
-                    <Link to="/#aboutUs" className="nav-item">About Us</Link>
+            <nav  className="nav">   
+                <div className="brand">
+                    <div className="logo"/>
+                </div>   
+                <ul className="navbar">
+                    <Link reloadDocument to="/" className="nav-item">Home</Link>
+                    <ScrollspyNav
+                    scrollTargetIds={["section_1", "section_2", "section_3"]}
+                    offset={-50}
+                    activeNavClass="is-active"
+                    scrollDuration={900}
+                    headerBackground="true">
+                        <ul className="navbar">
+                            <li><a href="#whatWeOffer" className="nav-item">Offers</a></li>
+                            <li><a href="#aboutUs" className="nav-item">About</a></li>
+                        </ul>
+                    </ScrollspyNav>
                     <Link reloadDocument to="/installationSite" className="nav-item">Installation Site</Link>
-                    <Link to="carModel" className="nav-item">Car Model</Link>
+                </ul>
             </nav>
-        </nav>
         </>
     )
 }

@@ -49,7 +49,7 @@ const About = () => {
   window.addEventListener("scroll", displayAboutSect);
 
   return (
-    <div className='about-container'>
+    <div className='about-container' id="aboutUs">
         <div className='about-recontainer'>
             <div className='about-logo'>
             </div>

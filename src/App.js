@@ -18,6 +18,7 @@ function App() {
         <Navbar/>
           <Routes>
             <Route path="/" element={ <Hero/> }/>
+            <Route path="/#aboutUs" element={ <About/> }/>
             <Route path="/brands" element={ <Brands/> }/>
             {/* <Route path="/tires" element={ <Tire/> }/> */}
             <Route path="/installationSite" element={ <Slctprovince/> }/>
