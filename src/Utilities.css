@@ -1,0 +1,23 @@
+/* Nav Style Utilities */
+
+    /* on scroll nav */
+        .navOnScroll{
+            background-color: gold;
+        }
+        .navOnScroll:hover {
+            background-color: black;
+        }
+
+/* Alltire Section Utilities */
+
+    /* Alltire on scroll */
+        .showAlltire {
+            opacity: 1;
+        }
+
+/* what we offer section utilities */
+
+    /* WWO on scroll */
+        .showWWO {
+            opacity: 1;
+        }
