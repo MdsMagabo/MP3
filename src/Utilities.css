@@ -52,3 +52,19 @@
         .displayTestimonials {
             opacity: 1;
         }
+        .displayCard {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        .activeTstmnlBtn {
+            background-color: white;
+            width: 50px;
+        }
+        .hidden {
+            background-color: transparent;
+            width: 20px;
+        }
+        .hideCard {
+            transform: translateX(-150%);
+            opacity: 0;
+        }

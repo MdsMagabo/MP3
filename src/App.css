@@ -750,6 +750,10 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 650px;
     opacity: 0;
+    transition: all 1.5s ease;
+    background: url("./assests/about-2.jpg");
+    background-size: cover;
+    background-position: center;
   }
   .testimonials-container {
     position: relative;
@@ -760,11 +764,15 @@ body::-webkit-scrollbar-thumb {
     max-width: 550px;
     width: 60%;
     height: 100%;
+    overflow: hidden;
     background-color: #3f3b3bc6;
   }
   .testimonials-container h2 {
     position: absolute;
     top: 50px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
   }
   .testimonial-card {
     position: absolute;
@@ -780,7 +788,17 @@ body::-webkit-scrollbar-thumb {
     margin-top: 70px;
     border-radius: 30px;
     border: 3px solid blue;
-    transform: scale(0.7);
+    transition: all 0.8s ease;
+  }
+  .tc-3,
+  .tc-5 {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  .tc-2,
+  .tc-4 {
+    transform: translateX(150%);
+    opacity: 0;
   }
   /* images */
       .tstmnl-img1 {
@@ -792,6 +810,43 @@ body::-webkit-scrollbar-thumb {
         height: 130px;
         border-radius: 100%;
       }
+      .tstmnl-img2 {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROyckB_9Ml-3cweS5RKL-BOWSKZ6eJIxJr_Q&usqp=CAU");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+      }
+      .tstmnl-img3 {
+        background-image: url("https://media.istockphoto.com/id/821437202/photo/portrait-of-young-handsome-asian-man-relaxing-at-the-park-in-bangkok-thailand.jpg?s=612x612&w=0&k=20&c=BbkYk9Y8MwlINwoNADZB9vwy3nggr-AhsKRAGT7zQbg=");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+      }
+      .tstmnl-img4 {
+        background-image: url("https://static.wixstatic.com/media/6c2903_9e24c293cf8649bc98713e76d6088705~mv2.jpeg/v1/fill/w_640,h_852,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6c2903_9e24c293cf8649bc98713e76d6088705~mv2.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+      }
+      .tstmnl-img5 {
+        background-image: url("https://st3.depositphotos.com/1005372/15226/i/450/depositphotos_152267576-stock-photo-handsome-young-teen.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+      }
+
   /* text */
       .testimonial-person-name {
         font-size: 20px;
@@ -805,6 +860,25 @@ body::-webkit-scrollbar-thumb {
       .testimonial-txt {
         color: white;
         text-align: justify;
+      }
+      /* btns  */
+      .testimonial-navs {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        position: absolute;
+        bottom: 50px;
+      }
+      .tstmnl-nav {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        border: 3px solid white;
+        transition: all 0.3s ease;
+      }
+      .tesNav-1 {
+        background-color: white;
+        width: 50px;
       }
 /* ABOUT */
 
@@ -932,16 +1006,17 @@ body::-webkit-scrollbar-thumb {
 /* Location */
 .location-sect {
   display:flex;
-  margin: 0 auto;
+  justify-content: space-around;
+  margin: 100px auto;
 }
 .dropdown{
   height: 400px;
   width: 20%;
-  /* font-size: 100px; */
+  max-width: 400px;
 }
 .select{
   font-size: 30px;
-  width: 600px;
+  width: 100%;
   margin: 50px;
 }
 .location{
@@ -949,10 +1024,11 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   justify-content: space-evenly;
   height: 400px;
-  width:75%;
+  width: 70%;
+  max-width: 500px;
   background-color:#eecc8d;
   overflow-y: scroll;
-  /* list-style-type: none; */
+  padding: 5px;
 }
 .location::-webkit-scrollbar {
   display: none;
@@ -1018,4 +1094,48 @@ body::-webkit-scrollbar-thumb {
   /* hover animtions */
   .footer-text:hover {
     color: blue;
+  }
+
+/* order directory section */
+
+  .order-directory {
+    width: 100%;
+    height: 100vh;
+  }
+  .orderDir-container {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 50px auto;
+  }
+  .orderDir-container h2 {
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 3px 5px black;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: blue;
+  }
+  .orderDir-container table {
+    width: 100%;
+    height: 700px;
+    border: none;
+  }
+  .orderDir-container thead {
+    height: 40px;
+  }
+  .orderDir-container th {
+    background: linear-gradient(45deg, rgb(154, 152, 152), rgb(123, 191, 241), rgb(154, 152, 152));
+    color: white;
+    text-shadow: 2px 3px 5px black;
+    font-size: 20px;
+    border: 3px solid blue;
+  }
+  .orderDir-container tbody {
+
+    overflow: scroll;
   }

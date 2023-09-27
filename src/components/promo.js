@@ -36,7 +36,7 @@ const Promo = () =>{
           </div>    
       
         <span className="promo-access-trigger" onMouseOver={displayPromo}
-        onMouseOut={hidePromo}>Promo runs until, <CountdownTimer countdownTimeStampMs={ 1696553364209 }/><Link to="/tires" className="promo-to-shop-portal">Buy Now!</Link> </span>
+        onMouseOut={hidePromo}>Promo runs until, <CountdownTimer countdownTimeStampMs={ 1696553364209 }/><Link reloadDocument to="/tires" className="promo-to-shop-portal">Buy Now!</Link> </span>
       </>
     )
 }

@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from "react";
 import Slctprovince from "./components/installation";
 import About from "./components/about";
-// import ProvinceList from "./ProvinceList";
+import OrderDirectory from "./components/orderDirectory";
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
             <Route path="/tires" element={ <Tire/> }/>
             <Route path="/installationSite" element={ <Slctprovince/> }/>
             <Route path="/form-cart" element={ <FormCart/> }/>
+            <Route path="/admin" element={ <OrderDirectory/> }/>
           </Routes>
         <About/>
         </BrowserRouter>

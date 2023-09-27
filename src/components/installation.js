@@ -40,25 +40,25 @@ function Slctprovince () {
   
      return(
         <div className="location-sect">
-          <div className='dropdown'>
-          <Form.Select aria-label="Default select example" className='select' onChange={(e)=>handleprovince(e)} >
-            <option value="">--Select Province--</option>
-          {
-            province.map( (province)=>(
-              <option value={province.id}>...{province.name}</option>
-            ))
-          }
-            </Form.Select>
-            <br/>
-            <Form.Select aria-label="Default select example" className='select' onChange={(e)=>handlecity(e)}>
-            <option value="">--Select City--</option>
-          {
-            city.map((city)=>(
-                <option value={city.id}>...{city.name}</option>
-            ))
-          }
-            </Form.Select>
-          </div> 
+            <div className='dropdown'>
+               <Form.Select aria-label="Default select example" className='select' onChange={(e)=>handleprovince(e)} >
+                  <option value="">--Select Province--</option>
+               {
+                  province.map( (province)=>(
+                  <option value={province.id}>...{province.name}</option>
+                  ))
+               }
+               </Form.Select>
+               <br/>
+               <Form.Select aria-label="Default select example" className='select' onChange={(e)=>handlecity(e)}>
+               <option value="">--Select City--</option>
+            {
+               city.map((city)=>(
+                  <option value={city.id}>...{city.name}</option>
+               ))
+            }
+               </Form.Select>
+            </div> 
           <div className="location">
             <div className="card">
              <h3>5J TYRE AND MAGS DEPOT</h3>

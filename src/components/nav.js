@@ -23,13 +23,14 @@ const Navbar = () => {
                 <ul className="navbar">
                     <Link reloadDocument to="/" className="nav-item">Home</Link>
                     <ScrollspyNav
-                    scrollTargetIds={["section_1", "section_2", "section_3"]}
+                    scrollTargetIds={["whatWeOffer", "testimonialsSect", "aboutUs"]}
                     offset={-50}
                     activeNavClass="is-active"
                     scrollDuration={900}
                     headerBackground="true">
                         <ul className="navbar">
                             <li><a href="#whatWeOffer" className="nav-item">Offers</a></li>
+                            <li><a href="#testimonialsSect" className="nav-item">Testimonials</a></li>
                             <li><a href="#aboutUs" className="nav-item">About</a></li>
                         </ul>
                     </ScrollspyNav>
